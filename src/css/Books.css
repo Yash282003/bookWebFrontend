@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Tilt+Warp&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  font-family: "Tilt Warp", cursive;
+
+}
+.active {
+  background-color: #1d4ed8;
+}
+.background-container {
+
+  max-width: 100%;
+  min-height: 85vh;
+  background-image: url("../assets/Header.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  background-attachment: fixed;
+
+  overflow: hidden;
+}
+
+.content {
+  width: 45vw;
+  padding: 4rem;
+ 
+
+
+ 
+}
+
+.content  .headline {
+  font-size: 60px;
+  color: rgb(24, 11, 11);
+  letter-spacing: 5px;
+  margin: 10px 0;
+}
+.sub_headline {
+  color: rgb(27, 15, 15);
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #0f172a; */
+  color: rgb(245, 244, 244);
+  position: sticky;
+  top: 0;
+}
+
+nav .title {
+  font-size: 2rem;
+  margin: 1.5rem;
+  text-decoration: none;
+  color: rgb(39, 17, 17);
+  letter-spacing: 2px;
+ 
+ 
+}
+
+
+nav ul {
+  display: flex;
+  margin: 1.5rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(41, 23, 23);
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+ background-color:  rgb(212, 209, 205);
+ color: rgb(252, 252, 9);
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #1f1010;
+  border-radius: 0.2rem;
+}
+.search_button {
+  width: 80%;
+  height: 40px;
+  border: none;
+  background-color: #F5F6F8;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  border-radius: 8px;
+}
+.search_button form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_button input{
+  border: none;
+  align-items: center;
+  background-color: #F5F6F8;
+  outline: none;
+}
+@media (max-width: 480px) {
+  nav .menu {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 3rem;
+    
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    margin: 0.2rem 0.5rem;
+  }
+}
