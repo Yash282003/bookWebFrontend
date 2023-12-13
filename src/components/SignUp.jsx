@@ -17,7 +17,7 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const data = await fetch('http://localhost:5000/register', {
+      const data = await fetch('https://bookweb-backend-1ux3.vercel.app/register', {
         method: 'POST',
         body: JSON.stringify({ name, email, password }),
         headers: {
