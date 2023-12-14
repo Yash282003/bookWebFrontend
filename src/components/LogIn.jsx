@@ -15,7 +15,7 @@ function LogIn() {
     e.preventDefault();
     console.log({ email, password });
     try {
-      const data = await fetch("https://bookweb-backend-1ux3.vercel.app/login", {
+      const data = await fetch("https://bookweb-backend-yx1p.vercel.app/login", {
         method: "POST",
         body: JSON.stringify({ email, password }),
         headers: {

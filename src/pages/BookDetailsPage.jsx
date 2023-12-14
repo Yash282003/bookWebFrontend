@@ -35,7 +35,7 @@ const BookDetailsPage = () => {
     };
 
     try {
-      const response = await fetch(`https://bookweb-backend-1ux3.vercel.app/${id}/reviews`, {
+      const response = await fetch(`https://bookweb-backend-yx1p.vercel.app/${id}/reviews`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
